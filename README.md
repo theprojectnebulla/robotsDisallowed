@@ -1,5 +1,7 @@
 # robotsDisallowed 🤖
 
+<img src="https://github.com/ph0enix-protocol/robotsDisallowed/blob/main/robotsDisallowed.svg" />
+
 A lightweight security reconnaissance tool that extracts and analyzes disallowed paths from robots.txt files, helping security researchers and penetration testers discover potentially sensitive endpoints.
 
 # Overview
