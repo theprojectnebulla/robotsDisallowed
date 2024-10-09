@@ -2,34 +2,80 @@
 
 <img src="https://github.com/ph0enix-protocol/robotsDisallowed/blob/main/robotsDisallowed.svg" />
 
-A lightweight security reconnaissance tool that extracts and analyzes disallowed paths from robots.txt files, helping security researchers and penetration testers discover potentially sensitive endpoints.
+> Transform robots.txt files into security reconnaissance goldmines - automated harvesting and analysis at scale.
 
-# Overview
+## Overview
+robotsDisallowed is an automated, all-in-one solution for harvesting and analyzing `robots.txt` files across the internet. It crawls public archives, processes robots.txt files, and extracts disallowed paths to aid in web assessments and security research.
 
-robotsDisallowed automatically scans and extracts paths from robots.txt files, creating a comprehensive wordlist of potentially hidden or sensitive directories and files. While robots.txt files are intended to guide search engine crawlers, they often inadvertently reveal valuable information about a website's structure and sensitive areas that organizations want to keep hidden from search engines.
+## Why robots.txt?
+The `robots.txt` file is used by websites to instruct web crawlers about which directories and files should not be crawled. However, these disallowed paths often reveal:
+- 🔒 Sensitive administrative panels
+- 🚪 Hidden directories
+- 📁 Backup files
+- 🛠️ Development environments
+- 📌 Internal applications
+- 🔑 Authentication endpoints
 
-The tool leverages data from CommonCrawl and top million websites rankings to perform large-scale analysis of robots.txt files across the internet. This broad scanning capability allows for:
+This information is invaluable for penetration testing, vulnerability research, and bug bounties.
 
-1. Creation of comprehensive wordlists based on real-world data
-2. Identification of common patterns in restricted paths across different industries
-3. Discovery of industry-specific sensitive endpoints and naming conventions
+## Key Features
 
-# Why Use robotsDisallowed?
+### Data Collection
+- **Multiple Dataset Integration:**
+  - Common Crawl dataset processing
+  - Top million websites scanning
+  - Custom URL scanning capabilities
 
-### For Security Researchers
+### Analysis & Processing
+- **Intelligent Path Extraction:**
+  - Automated disallowed path extraction
+  - Pattern recognition and categorization
+  - Duplicate removal and path normalization
 
-- Quick Reconnaissance: Rapidly identify potential sensitive endpoints without manual inspection
-- Automated Wordlist Generation: Create custom wordlists for further security testing and directory bruteforcing
-- Pattern Recognition: Identify common patterns in restricted paths that might indicate vulnerable areas
-- Time Efficiency: Automate the initial phase of security assessment by quickly gathering potential target endpoints
+### Wordlist Generation
+- **Smart Wordlist Creation:**
+  - Context-aware path filtering
+  - Sensitivity-based categorization
+  - Format-specific sorting (directories vs files)
+  - Export in multiple formats (TXT, JSON, CSV)
 
-### For Organizations
+## Why This Project Matters
 
-- Security Auditing: Verify that sensitive paths are properly protected, not just hidden from search engines
-- Exposure Assessment: Understand what sensitive information might be exposed through robots.txt
-- Configuration Review: Identify potentially misconfigured access controls
-- Compliance Checking: Ensure sensitive paths are properly documented and protected according to security policies
+  ### For Security Professionals
+  - **Efficient Reconnaissance:** Quickly discover hidden endpoints, development environments, and sensitive paths that traditional scanners miss
+  - **Time-Saving Automation:** Focus on testing rather than discovery by automating robots.txt analysis and wordlist generation
+  - **Bug Bounty Advantage:** Find unique attack surfaces often overlooked by others and quickly identify potential vulnerabilities
 
-# Disclaimer
+  ### For Organizations
+  - **Security Auditing:** Identify exposed sensitive paths, forgotten assets, and potential security gaps before attackers do
+  - **Compliance Support:** Maintain an inventory of sensitive endpoints and ensure proper access controls for regulatory requirements
+  - **Continuous Monitoring:** Track changes in exposed endpoints and integrate security checks into your development pipeline
 
-This tool is intended for legal security testing and research purposes only. Users must obtain proper authorization before scanning any systems they don't own. The authors are not responsible for any misuse or damage caused by this tool.
+robotsDisallowed turns overlooked robots.txt files into valuable security insights, making it essential for both offensive and defensive security teams.
+
+## Future Roadmap 🚀
+
+### Planned Features
+- AI-powered wordlist generation combining:
+  - robots.txt analysis
+  - Web application content analysis
+  - Pattern learning from successful findings
+- Technology stack-specific filters
+- Enhanced sensitivity detection
+
+## Security Considerations ⚠️
+
+This tool is designed for legitimate security research and authorized testing only. Users must:
+- Obtain proper authorization before scanning any target
+- Follow responsible disclosure practices
+- Comply with all applicable laws and regulations
+- Respect rate limits and scanning policies
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit pull requests, report bugs, or suggest features.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
